@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign of product</title>
+</head>
+<body>
+
+    <input type="text" id="num1" placeholder="enter first number"><br><br>
+    <input type="text" id="num2" placeholder="enter second number"><br><br>
+    <input type="text" id="num3" placeholder="enter third number"><br><br>
+    <button onclick="sign()" id="btn1">get product sign</button>
+    
+
+    <script>
+        function sign(){
+        var num1 = document.getElementById('num1').value;
+        var num2 = document.getElementById('num2').value;
+        var num3 = document.getElementById('num3').value;
+
+        var result = num1*num2*num3;
+
+        if(result == 0){
+            window.alert("num1 : "+num1+"\nnum2 : "+num2+"\nnum3 : "+num3+"\n\nProduct is zero.");
+        }else if(result < 0){
+            window.alert("num1 : "+num1+"\nnum2 : "+num2+"\nnum3 : "+num3+"\n\nProduct is negative number.");
+        }else{
+            window.alert("num1 : "+num1+"\nnum2 : "+num2+"\nnum3 : "+num3+"\n\nProduct is positive number.");
+        }
+    }
+    </script>
+</body>
+</html>
